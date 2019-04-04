@@ -1,0 +1,17 @@
+<!DOCKTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+</head>
+    <body>
+        <h1 style="color:#884EA0 "><ins>Programação SCRIPT<ins></h1>
+        <h2>Página de acesso aos sites criados nos laboratórios</h2>
+        <ul>   
+            <il>
+                <a href="lab1.html">Lab 1</a>
+            </il>
+        </ul>
+
+    </body>
+
+</html>
