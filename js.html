@@ -1,0 +1,59 @@
+<!DOCKTYPE>
+<html lang="pt_BR">
+    <head>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+<button type="button" onclick="rolardado()"><img width="200px" src="https://images.emojiterra.com/google/android-nougat/512px/1f3b2.png" alt=""></button>
+   
+    <script> function rolardado() { 
+        var r = rolardado;
+        window.alert('1', '2', '3', '4', '5', '6');
+
+            }</script>
+        <ul>
+            <li>X: <input id="x" type="number">
+                </li>
+            <li>y: <input id="y" type="number">
+                </li>
+        </ul>
+          
+        <label><input type="radio" id="soma" name="op">Soma</label>
+        <label><input type="radio" id="subtracao" name="op">Subtração</label>
+        <label><input type="radio" id="Multiplica" name="op">Multiplicação</label>
+        <label><input type="radio" id="Divisao" name="op">Divisão</label>
+        <button type="button" onclick="opera()">???</button>  
+        <p id="resp"></p>
+
+        <script>
+            function opera() {
+            var x=parseFloat(document.getElementById ('x').value);
+            var y=parseFloat(document.getElementById ('y').value);
+            var op;
+
+            if (document.getElementById('soma').checked == true) {
+                op = x + y;
+                }else {
+               if (document.getElementById('subtracao').checked == true) {
+                    op = x - y;
+                    } else {
+                  if  (document.getElementById('Multiplica').checked == true) {
+                        op = x * y;
+                        } else {
+                      if  (document.getElementById('Divisao').checked == true)  
+                            {op = x / y}
+                            else {
+                                op= "Selecione uma operação!"
+                        }
+                        }
+                        }
+                        }
+            
+                document.getElementById('resp').innerHTML = op;
+            }
+        </script>
+     
+        <p id='resp'></p>
+<p id="demo"></p>
+    </body>
+</html>
