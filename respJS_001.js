@@ -35,15 +35,41 @@ function Q3() {
 
 function Q4() {
     console.log('Q4');
-    var a_str = document.getElementById('a').value;
-    var b_str = document.getElementById('b').value;
-    var c_str = document.getElementById('c').value;
-    if ( a == Number && b == Number)
-        {console.log (Math.sqrt ((Math.pow (a,2) + Math.pow (b,2))))}
-    if ( b == Number && c == Number)
-        {console.log c = }
-    
-    
-    
+    var a_str = document.getElementById("a").value;
+    var b_str = document.getElementById("b").value;
+    var c_str = document.getElementById("c").value;
+    if ( (c_str) === '')
+        {console.log (Math.sqrt ((Math.pow (a_str,2) + Math.pow (b_str,2))));}
+    if ( (a_str) === '')
+        {console.log (Math.sqrt (Math.pow (c_str,2) - Math.pow (b_str,2))); }
+    if ( (b_str) === '')
+        {console.log (Math.sqrt (Math.pow (c_str,2) - Math.pow (a_str,2))); }
+}
 
+function Q5() {
+    console.log('Q5');
+    var altura = Number.parseFloat(document.getElementById('altura').value);
+    var massa = Number.parseFloat(document.getElementById('massa').value);
+    var aux = document.getElementById('generos');
+    var genero = aux.options[aux.selectedIndex].value;
+    imc =(massa/(altura*altura));
+
+    
+    if (genero == 'masculino1')
+    {if (imc < 18.5 )
+        {console.log ('Magro')}
+        else { if (imc >= 18.5 && imc < 24.9)
+                {console.log ('Sarado')}
+                else {if (imc >= 25 && imc < 29.9)
+                    {console.log ('Rechonchudo')}
+                    else {if (imc > 30)
+                        {console.log ('Obeso')}}}}}
+    else {{if (imc < 18.5 )
+        {console.log ('Magra')}
+        else { if (imc >= 18.5 && imc < 24.9)
+                {console.log ('Sarada')}
+                else {if (imc >= 25 && imc < 29.9)
+                    {console.log ('Rechonchuda')}
+                    else {if (imc > 30)
+                        {console.log ('Obesa')}}}}}}
 }
