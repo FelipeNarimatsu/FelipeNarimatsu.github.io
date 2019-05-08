@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <script src="respJS_002.js"></script>
+        <style>
+            .fundo {background-image: url(https://www.ajetur.com.br/wp-content/uploads/2017/11/background-site.jpg); 
+                    background-size: height 2000px 3000px;}
+        </style>
+    </head>
+    <body class="fundo">
+         <h2>Divisão Inteira</h2>
+         <p>Coloque os valores e encontre o resultado e o resto.</p>
+         <p>X:<input type="text" id="x"></p>
+         <p>Y:<input type="text" id="y"></p>
+         <button type="button" onclick=Q1()>Resposta Q1</button>
+         <p id="RQ1"></p>
+
+         <h2>Cálculo Hipoteusa</h2>
+         <p>Cateto 1:<input type="text" id="cateto1"></p>
+         <p>Cateto 2:<input type="text" id="cateto2"></p>
+         <button type="button" onclick="Q2()">Resposta Q2</button>
+         <p id="RQ2"></p>
+        
+        
+         <h2>Determinação de Gênero</h2>
+    <select id="profissoes">
+        <option value="bombeiro">Bombeiro</option>
+        <option value="ator">Ator</option>
+        <option value="atriz">Atriz</option>
+        <option value="musico">Musico</option>
+        <option value="musicista">Musicista</option>
+        <option value="enfermeira">Enfermeira</option>
+        <option value="medico">Médico</option>
+        <option value="medica">Médica</option>
+        <option value="engenheiro">Engenheiro</option>
+        <option value="engenheira">Engenheira</option>
+        <option value="presidente">Presidente</option>
+        <option value="professor">Professor</option>
+        <option value="professora">Professora</option>
+        <option value="farmaceutica">Farmacêutica</option>
+    </select>
+    <p id="RQ3"></p>
+    <button type="button" onclick="Q3()">Resposta Q3</button>
+
+    <h2>Cálculo do lado do triângulo retângulo</h2>
+    <p>Cateto 1:<input type="text" id="cateto3"></p>
+    <p>Cateto 2:<input type="text" id="cateto4"></p>
+    <p>Hipoteusa:<input type="text" id="hipotenusa"></p>
+    <p id="RQ4"></p>
+    <button type="button" onclick="Q4()">Resposta</button>
+    </body>
+
+
+
+    <h2>Cálculo IMC</h2>
+    <p>Gênero:<select id="generos"></p>
+    <option value="masculino1">Masculino</option>
+    <option value="feminino1">Feminino</option>
+    </select>
+    <p>Altura: <input type="text" id="altura"></p>
+    <p>Massa: <input type="text" id="massa"></p>
+    <p id="RQ5"></p>
+    <button type="button" onclick="Q5()">Resposta Q5</button>
+    
+
+
+</html>
