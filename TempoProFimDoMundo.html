@@ -1,0 +1,60 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+    .titulo {text-align: center; color: yellow}
+    .dedicatoria {text-align: center;; color: yellow}
+    .fundo {background-color: black}
+    .foto1 {float: left; height: 100px}
+    .foto2 {float: right; height: 100px}
+    .relogio {color: yellow}
+p {
+  text-align: center;
+  font-size: 60px;
+  margin-top: 0px;
+}
+</style>
+</head>
+<body class="fundo">
+    <div>
+    <img class="foto1" src="http://www.vgnoticias.com.br/storage/images/a1da1.jpeg" alt="Gilhotina">
+    <img class="foto2" src="http://www.vgnoticias.com.br/storage/images/a1da1.jpeg" alt="Gilhotina2">
+    </div>
+<h1 class="titulo">Tempo até a prova e GA.</h1>
+<h2 class="dedicatoria">Obs:Dedicado pro Cayo :)</h2>
+<p id="demo" class="relogio"></p>
+
+<script>
+// Set the date we're counting down to
+var countDownDate = new Date("May 28, 2019 15:37:25").getTime();
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+  // Get today's date and time
+  var now = new Date().getTime();
+    
+  // Find the distance between now and the count down date
+  var distance = countDownDate - now;
+    
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    
+  // Output the result in an element with id="demo"
+  document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+  + minutes + "m " + seconds + "s ";
+    
+  // If the count down is over, write some text 
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("demo").innerHTML = "EXPIRED";
+  }
+}, 1000);
+</script>
+
+</body>
+</html>
