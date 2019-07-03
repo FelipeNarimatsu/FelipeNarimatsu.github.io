@@ -11,7 +11,7 @@
 
 <body class="corpo">
         <div class="container">
-                <div class="row TOPO">
+                <div class="row TOPO" style="padding-top: 30px; padding-right: 30px; padding-bottom: 80px; padding-left: 30px;">
                     <div class="col-sm-4">
                         <img width="90px" src="http://www.antigo.ufu.br/sites/antigo.ufu.br/files/transparente%20azul03.png">
                     </div>
@@ -24,13 +24,13 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-sm-4">
+                    <div class="col-sm-4" style="background-color: #C0C0C0; border: 2px solid #50BFE6; border-radius: 5px;">
                         <h3>Selecione a foŕmula:</h3>
-                        <p>OBS: Os valores decimais devem ser separados por ponto(".")</p>
+                        
                         <ul>
-                            <il><button onload="fechar()" onclick="myFunction()">Algoritmo de Euclides (MDC)</button></il>
+                            <il><button onload="fechadinho()" onclick="myFunction()">Algoritmo de Euclides (MDC)</button></il>
                             <il><button onload="fechar2()" onclick="myFunction2()">Cálculo de Tensão</button></il>
-                            <il><button onload="fechar3()" onclick="myFunction3()">Cálculo Equação do Segundo Grau</button></il>
+                            <il><button onload="fechar()" onclick="myFunction3()">Cálculo Equação do Segundo Grau</button></il>
                             <il><button onload="fechar4()" onclick="myFunction4()">Equação Geral dos Gases</button></il>
                             <il><button onload="fechar5()" onclick="myFunction5()">Quantidade de Calor</button></il>
                             <il><button onload="fechar6()" onclick="myFunction6()">Energia Potencial Elástica</button></il>
@@ -60,7 +60,10 @@
                         </ul>
                     </div>
                     <div class="col-sm-8">
-                            <div id="myDIV">                      
+                            <h2>As equações selecionadas aparecerão aqui:</h2>
+                            <p>OBS: Os valores decimais devem ser separados por ponto(".")</p>
+
+                            <div class="divs" id="myDIV">                      
                                     <h2> Algoritmo de Euclides (MDC) </h2>
                                     <br>
                                     <p>Valor 1: <input type="text" id="a"> </p>
@@ -68,7 +71,7 @@
                                     <button type="button" onclick="T1()">Cálculo MDC</button>
                                     <p id="T1">Sem Resposta</p>
                             </div>
-                            <div id="myDIV2">
+                            <div class="divs" id="myDIV2">
                                     <h2> Cálculo de Tensão </h2>
                                     <p>Informe os valores para obter a Tensão(V)</p>
                                     <br>
@@ -77,7 +80,7 @@
                                     <button type="button" onclick="T2()">Calcular Tensão</button>
                                     <p id="T2">Sem Resposta</p>
                             </div>
-                            <div id="myDIV3">
+                            <div class="divs" id="myDIV3">
                                     <h2>Cálculo Equação do Segundo Grau</h2>
                                     <p>OBS: Preencha os valores inexistentes com 0 e separe números decimais com "."</p>
                                     <br>

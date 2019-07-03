@@ -1,25 +1,37 @@
-window.onload = function fechar() {
+//window.onload = function () {
+//  document.getElementById('myDIV').style.display = 'none';
+//};
+
+window.onload = function () {
   document.getElementById('myDIV').style.display = 'none';
-};
-
-window.onload = function fechar2() {
   document.getElementById('myDIV2').style.display = 'none';
-};
-
-window.onload = function fechar3() {
   document.getElementById('myDIV3').style.display = 'none';
-};
-
-window.onload = function fechar4() {
   document.getElementById('myDIV4').style.display = 'none';
-};
-
-window.onload = function fechar5() {
   document.getElementById('myDIV5').style.display = 'none';
-};
-
-window.onload = function fechar6() {
   document.getElementById('myDIV6').style.display = 'none';
+  document.getElementById('myDIV7').style.display = 'none';
+  document.getElementById('myDIV8').style.display = 'none';
+  document.getElementById('myDIV9').style.display = 'none';
+  document.getElementById('myDIV10').style.display = 'none';
+  document.getElementById('myDIV11').style.display = 'none';
+  document.getElementById('myDIV12').style.display = 'none';
+  document.getElementById('myDIV13').style.display = 'none';
+  document.getElementById('myDIV14').style.display = 'none';
+  document.getElementById('myDIV15').style.display = 'none';
+  document.getElementById('myDIV16').style.display = 'none';
+  document.getElementById('myDIV17').style.display = 'none';
+  document.getElementById('myDIV18').style.display = 'none';
+  document.getElementById('myDIV19').style.display = 'none';
+  document.getElementById('myDIV20').style.display = 'none';
+  document.getElementById('myDIV21').style.display = 'none';
+  document.getElementById('myDIV22').style.display = 'none';
+  document.getElementById('myDIV23').style.display = 'none';
+  document.getElementById('myDIV24').style.display = 'none';
+  document.getElementById('myDIV25').style.display = 'none';
+  document.getElementById('myDIV26').style.display = 'none';
+  document.getElementById('myDIV27').style.display = 'none';
+  document.getElementById('myDIV28').style.display = 'none';
+  document.getElementById('myDIV29').style.display = 'none';
 };
 
 function myFunction() {
